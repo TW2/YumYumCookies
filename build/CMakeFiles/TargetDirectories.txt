@@ -1,0 +1,4 @@
+/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles/YYCookies.dir
+/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles/run-YYCookies.dir
+/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles/edit_cache.dir
+/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles/rebuild_cache.dir
