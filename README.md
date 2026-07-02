@@ -13,8 +13,22 @@ cmake --build build
 
 ## Run the application
 
+Linux:
+
 ```bash
 ./build/YYCookies
+```
+
+Windows target:
+
+```bash
+./build/YYCookies-windows.exe
+```
+
+macOS target:
+
+```bash
+./build/YYCookies-macos
 ```
 
 ## Run via the provided CMake target
