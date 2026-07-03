@@ -1,1 +1,1 @@
-/usr/bin/c++  -pthread -pthread -Wl,--dependency-file=CMakeFiles/YYCookies.dir/link.d CMakeFiles/YYCookies.dir/main.cpp.o -o YYCookies  -L/usr/lib/x86_64-linux-gnu -pthread -lwx_gtk3u_core-3.2 -lwx_baseu-3.2
+/usr/bin/c++  -pthread -pthread -Wl,--dependency-file=CMakeFiles/YYCookies.dir/link.d CMakeFiles/YYCookies.dir/main.cpp.o CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.o -o YYCookies  -L/usr/lib/x86_64-linux-gnu -pthread -lwx_gtk3u_core-3.2 -lwx_baseu-3.2 -lavformat -lavcodec -lavutil

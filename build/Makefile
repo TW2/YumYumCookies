@@ -142,6 +142,30 @@ run-YYCookies/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run-YYCookies.dir/build.make CMakeFiles/run-YYCookies.dir/build
 .PHONY : run-YYCookies/fast
 
+ffmpeg_helper.o: ffmpeg_helper.cpp.o
+.PHONY : ffmpeg_helper.o
+
+# target to build an object file
+ffmpeg_helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.o
+.PHONY : ffmpeg_helper.cpp.o
+
+ffmpeg_helper.i: ffmpeg_helper.cpp.i
+.PHONY : ffmpeg_helper.i
+
+# target to preprocess a source file
+ffmpeg_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.i
+.PHONY : ffmpeg_helper.cpp.i
+
+ffmpeg_helper.s: ffmpeg_helper.cpp.s
+.PHONY : ffmpeg_helper.s
+
+# target to generate assembly for a file
+ffmpeg_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.s
+.PHONY : ffmpeg_helper.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -176,6 +200,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... run-YYCookies"
 	@echo "... YYCookies"
+	@echo "... ffmpeg_helper.o"
+	@echo "... ffmpeg_helper.i"
+	@echo "... ffmpeg_helper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

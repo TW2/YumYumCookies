@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/ffmpeg_helper.cpp" "CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.o" "gcc" "CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.o.d"
   "/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/main.cpp" "CMakeFiles/YYCookies.dir/main.cpp.o" "gcc" "CMakeFiles/YYCookies.dir/main.cpp.o.d"
   "" "YYCookies" "gcc" "CMakeFiles/YYCookies.dir/link.d"
   )

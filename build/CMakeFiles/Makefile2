@@ -86,12 +86,12 @@ clean: CMakeFiles/run-YYCookies.dir/clean
 CMakeFiles/YYCookies.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles --progress-num=1,2 "Built target YYCookies"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles --progress-num=1,2,3 "Built target YYCookies"
 .PHONY : CMakeFiles/YYCookies.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/YYCookies.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/YYCookies.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 0
 .PHONY : CMakeFiles/YYCookies.dir/rule
@@ -103,7 +103,7 @@ YYCookies: CMakeFiles/YYCookies.dir/rule
 # codegen rule for target.
 CMakeFiles/YYCookies.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/YYCookies.dir/build.make CMakeFiles/YYCookies.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles --progress-num=1,2 "Finished codegen for target YYCookies"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target YYCookies"
 .PHONY : CMakeFiles/YYCookies.dir/codegen
 
 # clean rule for target.
@@ -123,7 +123,7 @@ CMakeFiles/run-YYCookies.dir/all: CMakeFiles/YYCookies.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run-YYCookies.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run-YYCookies.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build/CMakeFiles 0
 .PHONY : CMakeFiles/run-YYCookies.dir/rule

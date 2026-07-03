@@ -1,4 +1,5 @@
 #include <wx/wx.h>
+#include "ffmpeg_helper.h"
 #include "languages/loader.cpp"
 
 class MyFrame : public wxFrame {
@@ -69,8 +70,16 @@ class MyApp : public wxApp {
 public:
     bool OnInit() override {
         Loader::LoadDefaultISO();
+
         auto* frame = new MyFrame();
         frame->Show();
+
+        if (FFmpeg::IsAvailable()) {
+            frame->SetStatusText(wxString::Format("FFmpeg available: %s", FFmpeg::GetVersion()));
+        } else {
+            frame->SetStatusText("FFmpeg unavailable");
+        }
+
         return true;
     }
 };

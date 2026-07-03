@@ -195,6 +195,27 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a library.
+FFMPEG_AVCODEC_LIBRARY:FILEPATH=FFMPEG_AVCODEC_LIBRARY-NOTFOUND
+
+//Path to a library.
+FFMPEG_AVFORMAT_LIBRARY:FILEPATH=FFMPEG_AVFORMAT_LIBRARY-NOTFOUND
+
+//Path to a library.
+FFMPEG_AVUTIL_LIBRARY:FILEPATH=FFMPEG_AVUTIL_LIBRARY-NOTFOUND
+
+//Found FFmpeg libraries
+FFMPEG_FOUND:BOOL=FALSE
+
+//Path to a file.
+FFMPEG_INCLUDE_DIR:PATH=FFMPEG_INCLUDE_DIR-NOTFOUND
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Value Computed by CMake
 YYCookies_BINARY_DIR:STATIC=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/build
 
@@ -203,6 +224,15 @@ YYCookies_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 YYCookies_SOURCE_DIR:STATIC=/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies
+
+//Path to a library.
+pkgcfg_lib_FFMPEG_AVCODEC_avcodec:FILEPATH=/usr/lib/x86_64-linux-gnu/libavcodec.so
+
+//Path to a library.
+pkgcfg_lib_FFMPEG_AVFORMAT_avformat:FILEPATH=/usr/lib/x86_64-linux-gnu/libavformat.so
+
+//Path to a library.
+pkgcfg_lib_FFMPEG_AVUTIL_avutil:FILEPATH=/usr/lib/x86_64-linux-gnu/libavutil.so
 
 //Location of wxWidgets library configuration provider binary (wx-config).
 wxWidgets_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/wx-config
@@ -353,8 +383,138 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+FFMPEG_AVCODEC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVCODEC_CFLAGS_I:INTERNAL=
+FFMPEG_AVCODEC_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVCODEC_FOUND:INTERNAL=1
+FFMPEG_AVCODEC_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVCODEC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVCODEC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavcodec
+FFMPEG_AVCODEC_LDFLAGS_OTHER:INTERNAL=
+FFMPEG_AVCODEC_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVCODEC_LIBRARIES:INTERNAL=avcodec
+//ADVANCED property for variable: FFMPEG_AVCODEC_LIBRARY
+FFMPEG_AVCODEC_LIBRARY-ADVANCED:INTERNAL=1
+FFMPEG_AVCODEC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVCODEC_LIBS:INTERNAL=
+FFMPEG_AVCODEC_LIBS_L:INTERNAL=
+FFMPEG_AVCODEC_LIBS_OTHER:INTERNAL=
+FFMPEG_AVCODEC_LIBS_PATHS:INTERNAL=
+FFMPEG_AVCODEC_MODULE_NAME:INTERNAL=libavcodec
+FFMPEG_AVCODEC_PREFIX:INTERNAL=/usr
+FFMPEG_AVCODEC_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVCODEC_STATIC_CFLAGS_I:INTERNAL=
+FFMPEG_AVCODEC_STATIC_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVCODEC_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVCODEC_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavcodec;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lwebpmux;-pthread;-lm;-latomic;-llzma;-ldav1d;-lrsvg-2;-lgdk_pixbuf-2.0;-lgio-2.0;-lcairo;-lgobject-2.0;-lglib-2.0;-lzvbi;-lpthread;-lm;-lpng;-lz;-lsnappy;-lstdc++;-laom;-lcodec2;-lgsm;-ljxl;-ljxl_threads;-lmp3lame;-lm;-lopenjp2;-lopus;-lrav1e;-lm;-lshine;-lspeex;-lSvtAv1Enc;-ltheoraenc;-ltheoradec;-logg;-ltwolame;-lvorbis;-lvorbisenc;-lwebp;-lx264;-lx265;-lxvidcore;-lglslang;-lMachineIndependent;-lGenericCodeGen;-lSPIRV;-lSPIRV-Tools-opt;-lSPIRV-Tools;-lpthread;-lstdc++;-lm;-lz;-lva;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lswresample;-lm;-lsoxr;-latomic;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+FFMPEG_AVCODEC_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+FFMPEG_AVCODEC_STATIC_LIBDIR:INTERNAL=
+FFMPEG_AVCODEC_STATIC_LIBRARIES:INTERNAL=avcodec;vpx;m;vpx;m;vpx;m;vpx;m;webpmux;m;atomic;lzma;dav1d;rsvg-2;gdk_pixbuf-2.0;gio-2.0;cairo;gobject-2.0;glib-2.0;zvbi;pthread;m;png;z;snappy;stdc++;aom;codec2;gsm;jxl;jxl_threads;mp3lame;m;openjp2;opus;rav1e;m;shine;speex;SvtAv1Enc;theoraenc;theoradec;ogg;twolame;vorbis;vorbisenc;webp;x264;x265;xvidcore;glslang;MachineIndependent;GenericCodeGen;SPIRV;SPIRV-Tools-opt;SPIRV-Tools;pthread;stdc++;m;z;va;vpl;dl;swresample;m;soxr;atomic;avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+FFMPEG_AVCODEC_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+FFMPEG_AVCODEC_STATIC_LIBS:INTERNAL=
+FFMPEG_AVCODEC_STATIC_LIBS_L:INTERNAL=
+FFMPEG_AVCODEC_STATIC_LIBS_OTHER:INTERNAL=
+FFMPEG_AVCODEC_STATIC_LIBS_PATHS:INTERNAL=
+FFMPEG_AVCODEC_VERSION:INTERNAL=62.11.100
+FFMPEG_AVCODEC_libavcodec_INCLUDEDIR:INTERNAL=
+FFMPEG_AVCODEC_libavcodec_LIBDIR:INTERNAL=
+FFMPEG_AVCODEC_libavcodec_PREFIX:INTERNAL=
+FFMPEG_AVCODEC_libavcodec_VERSION:INTERNAL=
+FFMPEG_AVFORMAT_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVFORMAT_CFLAGS_I:INTERNAL=
+FFMPEG_AVFORMAT_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVFORMAT_FOUND:INTERNAL=1
+FFMPEG_AVFORMAT_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVFORMAT_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVFORMAT_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavformat
+FFMPEG_AVFORMAT_LDFLAGS_OTHER:INTERNAL=
+FFMPEG_AVFORMAT_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVFORMAT_LIBRARIES:INTERNAL=avformat
+//ADVANCED property for variable: FFMPEG_AVFORMAT_LIBRARY
+FFMPEG_AVFORMAT_LIBRARY-ADVANCED:INTERNAL=1
+FFMPEG_AVFORMAT_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVFORMAT_LIBS:INTERNAL=
+FFMPEG_AVFORMAT_LIBS_L:INTERNAL=
+FFMPEG_AVFORMAT_LIBS_OTHER:INTERNAL=
+FFMPEG_AVFORMAT_LIBS_PATHS:INTERNAL=
+FFMPEG_AVFORMAT_MODULE_NAME:INTERNAL=libavformat
+FFMPEG_AVFORMAT_PREFIX:INTERNAL=/usr
+FFMPEG_AVFORMAT_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVFORMAT_STATIC_CFLAGS_I:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVFORMAT_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavformat;-lm;-latomic;-lxml2;-lbz2;-ldvdnav;-ldvdread;-lgme;-lopenmpt;-lstdc++;-lchromaprint;-lbluray;-lz;-lgnutls;-lrabbitmq;-lrist;-lsrt-gnutls;-lssh;-lzmq;-lavcodec;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lvpx;-lm;-lwebpmux;-pthread;-lm;-latomic;-llzma;-ldav1d;-lrsvg-2;-lgdk_pixbuf-2.0;-lgio-2.0;-lcairo;-lgobject-2.0;-lglib-2.0;-lzvbi;-lpthread;-lm;-lpng;-lz;-lsnappy;-lstdc++;-laom;-lcodec2;-lgsm;-ljxl;-ljxl_threads;-lmp3lame;-lm;-lopenjp2;-lopus;-lrav1e;-lm;-lshine;-lspeex;-lSvtAv1Enc;-ltheoraenc;-ltheoradec;-logg;-ltwolame;-lvorbis;-lvorbisenc;-lwebp;-lx264;-lx265;-lxvidcore;-lglslang;-lMachineIndependent;-lGenericCodeGen;-lSPIRV;-lSPIRV-Tools-opt;-lSPIRV-Tools;-lpthread;-lstdc++;-lm;-lz;-lva;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lswresample;-lm;-lsoxr;-latomic;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+FFMPEG_AVFORMAT_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
+FFMPEG_AVFORMAT_STATIC_LIBDIR:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_LIBRARIES:INTERNAL=avformat;m;atomic;xml2;bz2;dvdnav;dvdread;gme;openmpt;stdc++;chromaprint;bluray;z;gnutls;rabbitmq;rist;srt-gnutls;ssh;zmq;avcodec;vpx;m;vpx;m;vpx;m;vpx;m;webpmux;m;atomic;lzma;dav1d;rsvg-2;gdk_pixbuf-2.0;gio-2.0;cairo;gobject-2.0;glib-2.0;zvbi;pthread;m;png;z;snappy;stdc++;aom;codec2;gsm;jxl;jxl_threads;mp3lame;m;openjp2;opus;rav1e;m;shine;speex;SvtAv1Enc;theoraenc;theoradec;ogg;twolame;vorbis;vorbisenc;webp;x264;x265;xvidcore;glslang;MachineIndependent;GenericCodeGen;SPIRV;SPIRV-Tools-opt;SPIRV-Tools;pthread;stdc++;m;z;va;vpl;dl;swresample;m;soxr;atomic;avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+FFMPEG_AVFORMAT_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+FFMPEG_AVFORMAT_STATIC_LIBS:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_LIBS_L:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_LIBS_OTHER:INTERNAL=
+FFMPEG_AVFORMAT_STATIC_LIBS_PATHS:INTERNAL=
+FFMPEG_AVFORMAT_VERSION:INTERNAL=62.3.100
+FFMPEG_AVFORMAT_libavformat_INCLUDEDIR:INTERNAL=
+FFMPEG_AVFORMAT_libavformat_LIBDIR:INTERNAL=
+FFMPEG_AVFORMAT_libavformat_PREFIX:INTERNAL=
+FFMPEG_AVFORMAT_libavformat_VERSION:INTERNAL=
+FFMPEG_AVUTIL_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVUTIL_CFLAGS_I:INTERNAL=
+FFMPEG_AVUTIL_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVUTIL_FOUND:INTERNAL=1
+FFMPEG_AVUTIL_INCLUDEDIR:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVUTIL_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVUTIL_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavutil
+FFMPEG_AVUTIL_LDFLAGS_OTHER:INTERNAL=
+FFMPEG_AVUTIL_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVUTIL_LIBRARIES:INTERNAL=avutil
+//ADVANCED property for variable: FFMPEG_AVUTIL_LIBRARY
+FFMPEG_AVUTIL_LIBRARY-ADVANCED:INTERNAL=1
+FFMPEG_AVUTIL_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+FFMPEG_AVUTIL_LIBS:INTERNAL=
+FFMPEG_AVUTIL_LIBS_L:INTERNAL=
+FFMPEG_AVUTIL_LIBS_OTHER:INTERNAL=
+FFMPEG_AVUTIL_LIBS_PATHS:INTERNAL=
+FFMPEG_AVUTIL_MODULE_NAME:INTERNAL=libavutil
+FFMPEG_AVUTIL_PREFIX:INTERNAL=/usr
+FFMPEG_AVUTIL_STATIC_CFLAGS:INTERNAL=-I/usr/include/x86_64-linux-gnu
+FFMPEG_AVUTIL_STATIC_CFLAGS_I:INTERNAL=
+FFMPEG_AVUTIL_STATIC_CFLAGS_OTHER:INTERNAL=
+FFMPEG_AVUTIL_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/x86_64-linux-gnu
+FFMPEG_AVUTIL_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lavutil;-lva-drm;-lva;-lva-x11;-lva;-lvdpau;-lX11;-lm;-ldrm;-L/usr/lib/x86_64-linux-gnu/pkgconfig/../;-lvpl;-ldl;-lOpenCL;-lva;-latomic;-pthread;-lX11
+FFMPEG_AVUTIL_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread
+FFMPEG_AVUTIL_STATIC_LIBDIR:INTERNAL=
+FFMPEG_AVUTIL_STATIC_LIBRARIES:INTERNAL=avutil;va-drm;va;va-x11;va;vdpau;X11;m;drm;vpl;dl;OpenCL;va;atomic;X11
+FFMPEG_AVUTIL_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu/pkgconfig/../
+FFMPEG_AVUTIL_STATIC_LIBS:INTERNAL=
+FFMPEG_AVUTIL_STATIC_LIBS_L:INTERNAL=
+FFMPEG_AVUTIL_STATIC_LIBS_OTHER:INTERNAL=
+FFMPEG_AVUTIL_STATIC_LIBS_PATHS:INTERNAL=
+FFMPEG_AVUTIL_VERSION:INTERNAL=60.8.100
+FFMPEG_AVUTIL_libavutil_INCLUDEDIR:INTERNAL=
+FFMPEG_AVUTIL_libavutil_LIBDIR:INTERNAL=
+FFMPEG_AVUTIL_libavutil_PREFIX:INTERNAL=
+FFMPEG_AVUTIL_libavutil_VERSION:INTERNAL=
+//ADVANCED property for variable: FFMPEG_INCLUDE_DIR
+FFMPEG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding wxWidgets
 FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[-L/usr/lib/x86_64-linux-gnu;-pthread;;;-lwx_gtk3u_core-3.2;-lwx_baseu-3.2][/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.2;/usr/include/wx-3.2][v3.2.9()]
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_arguments_FFMPEG_AVCODEC:INTERNAL=QUIET;libavcodec
+__pkg_config_arguments_FFMPEG_AVFORMAT:INTERNAL=QUIET;libavformat
+__pkg_config_arguments_FFMPEG_AVUTIL:INTERNAL=QUIET;libavutil
+__pkg_config_checked_FFMPEG_AVCODEC:INTERNAL=1
+__pkg_config_checked_FFMPEG_AVFORMAT:INTERNAL=1
+__pkg_config_checked_FFMPEG_AVUTIL:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_FFMPEG_AVCODEC_avcodec
+pkgcfg_lib_FFMPEG_AVCODEC_avcodec-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_FFMPEG_AVFORMAT_avformat
+pkgcfg_lib_FFMPEG_AVFORMAT_avformat-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_FFMPEG_AVUTIL_avutil
+pkgcfg_lib_FFMPEG_AVUTIL_avutil-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 
