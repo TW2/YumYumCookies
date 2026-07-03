@@ -1,14 +1,36 @@
 #include <wx/wx.h>
 #include "ffmpeg_helper.h"
 #include "languages/loader.cpp"
+#include "ui/frames/about.cpp"
 
 class MyFrame : public wxFrame {
 public:
     MyFrame() : wxFrame(nullptr, wxID_ANY, "YumYumCookies", wxDefaultPosition, wxSize(1900, 1000)) {
+        wxString osInfo = wxGetOsDescription();
+        if(osInfo.Contains("Windows")) {
+            wxString iconPath = Loader::GetResourcesImagePath() + wxFileName::GetPathSeparator() + "yyc_icon.ico";
+            wxIcon icon = wxIcon(iconPath, wxBITMAP_TYPE_ICO);
+            SetIcon(icon);
+        } else if(osInfo.Contains("Linux")) {
+            wxString iconPath = Loader::GetResourcesImagePath() + wxFileName::GetPathSeparator() + "yyc_icon.xpm";
+            wxIcon icon = wxIcon(iconPath, wxBITMAP_TYPE_XPM);
+            SetIcon(icon);
+        } else if(osInfo.Contains("Mac")) {
+            wxString iconPath = Loader::GetResourcesImagePath() + wxFileName::GetPathSeparator() + "yyc_icon.icns";
+            wxIcon icon = wxIcon(iconPath, wxBITMAP_TYPE_ICON);
+            SetIcon(icon);
+        } else {
+            wxLogError("Unsupported OS for setting icon: %s", osInfo);
+        }
+        
+
         wxMenuBar* menuBar = new wxMenuBar();
         wxMenu* fileMenu = new wxMenu();
+        wxMenu* aboutMenu = new wxMenu();
         fileMenu->Append(wxID_EXIT, Loader::GetTranslation("menu.quit", "E&xit\tAlt-F4"));
         menuBar->Append(fileMenu, Loader::GetTranslation("menu.file", "&File"));
+        aboutMenu->Append(wxID_ABOUT, Loader::GetTranslation("menu.about_yyc", "&About YumYumCookies"));
+        menuBar->Append(aboutMenu, Loader::GetTranslation("menu.help", "&Help\tF1"));
         SetMenuBar(menuBar);
 
         CreateStatusBar();
@@ -43,6 +65,9 @@ public:
         panel->SetSizer(mainSizer);
 
         Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
+        Bind(wxEVT_MENU, [this](wxCommandEvent&) {
+            AboutDialog aboutDialog(Loader::GetTranslation("dialog.about_yyc", "About YumYumCookies"));
+        }, wxID_ABOUT);
         // Bind(wxEVT_BUTTON, &MyFrame::OnHello, this, helloButton->GetId());
         // Bind(wxEVT_BUTTON, &MyFrame::OnExit, this, exitButton->GetId());
     }

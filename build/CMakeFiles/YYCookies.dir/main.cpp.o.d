@@ -394,4 +394,5 @@ CMakeFiles/YYCookies.dir/main.cpp.o: \
  /usr/include/wx-3.2/wx/file.h /usr/include/wx-3.2/wx/convauto.h \
  /usr/include/wx-3.2/wx/stdpaths.h /usr/include/wx-3.2/wx/unix/stdpaths.h \
  /usr/include/wx-3.2/wx/txtstrm.h /usr/include/wx-3.2/wx/wfstream.h \
- /usr/include/wx-3.2/wx/ffile.h
+ /usr/include/wx-3.2/wx/ffile.h \
+ /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/ui/frames/about.cpp

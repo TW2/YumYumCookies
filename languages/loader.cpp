@@ -56,13 +56,19 @@ public:
                 while (!inputStream.Eof()) {
                     wxString line = textStream.ReadLine();
                     if (line.StartsWith(key + "=")) {
-                        return line.AfterFirst('=');
+                        wxString value = line.AfterFirst('=');
+                        value.Replace("\\n", "\n"); // Replace escaped newlines with actual newlines
+                        return value;
                     }
                 }
             }
         }
 
         return defaultValue;
+    }
+
+    static wxString GetResourcesImagePath() {
+        return GetResourcePath() + wxFileName::GetPathSeparator() + "images";
     }
 
     static wxString languageCode;

@@ -1,3 +1,9 @@
 welcome=Bienvenue dans MiamMiamCookies
 menu.file=Fichier
 menu.quit=Quitter
+menu.help=Aide
+menu.about_yyc=À propos de YumYumCookies
+dialog.about_yyc=À propos de YumYumCookies
+dialog.ffmpeg_info=YYCookies utilise la bibliothèque FFmpeg.\nVotre version de FFmpeg est :
+dialog.ffmpeg_satisfied=Votre installation est bien détectée.
+dialog.ffmpeg_unavailable=YYCookies utilise la bibliothèque FFmpeg.\nFFmpeg n'a pas pu être détecté sur votre système.\nVeuillez installer FFmpeg.

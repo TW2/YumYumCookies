@@ -284,6 +284,7 @@ CMakeFiles/YYCookies.dir/ffmpeg_helper.cpp.o: /home/yves/Documents/Dev/C_CPP/YYC
 CMakeFiles/YYCookies.dir/main.cpp.o: /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/main.cpp \
   /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/ffmpeg_helper.h \
   /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/languages/loader.cpp \
+  /home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/ui/frames/about.cpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1068,8 +1069,6 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 
 /usr/lib/x86_64-linux-gnu/libwebp.so.7:
 
-/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1:
-
 /usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0:
 
 /usr/lib/x86_64-linux-gnu/libwayland-client.so.0:
@@ -1150,6 +1149,8 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 
 /usr/lib/x86_64-linux-gnu/libmount.so.1:
 
+/usr/lib/x86_64-linux-gnu/libmd.so.0:
+
 /usr/include/wx-3.2/wx/bmpbuttn.h:
 
 /usr/include/c++/15/ext/numeric_traits.h:
@@ -1219,6 +1220,14 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/assert.h:
+
+/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1:
+
+/home/yves/Documents/Dev/C_CPP/YYCookies/0.1/YYCookies/ui/frames/about.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/wx-3.2/wx/scrolwin.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -1314,10 +1323,6 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/wx-3.2/wx/buffer.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
 /usr/include/c++/15/bits/std_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
@@ -1327,6 +1332,10 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/wx-3.2/wx/buffer.h:
 
 /usr/lib/x86_64-linux-gnu/libXdmcp.so.6:
 
@@ -1355,8 +1364,6 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/lib/x86_64-linux-gnu/libmd.so.0:
 
 /usr/include/c++/15/bits/stl_heap.h:
 
@@ -1431,10 +1438,6 @@ YYCookies: /lib/x86_64-linux-gnu/libcairo-gobject.so.2 \
 /usr/include/c++/15/cstdlib:
 
 /usr/include/wx-3.2/wx/generic/icon.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/wx-3.2/wx/scrolwin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
