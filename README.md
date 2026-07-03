@@ -61,12 +61,7 @@ Install FFmpeg and set `FFMPEG_DIR` or `FFMPEG_ROOT` to the FFmpeg installation 
 brew install ffmpeg
 ```
 
-
-- CMake
-- A C++ compiler
-- wxWidgets development libraries
-
-On Debian/Ubuntu, you can install them with:
+### Example wxWidgets install on Debian/Ubuntu
 
 ```bash
 sudo apt update
